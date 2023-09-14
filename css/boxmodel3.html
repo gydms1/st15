@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boxmodel3-boxmodel1 계산법</title>
+  <style>
+    *{margin: 0; padding: 0%;}
+    .box{
+      width: 400px;
+      height: 300px;
+      padding:50px;
+      border: 10px solid #f86;
+      margin: 50px auto;
+      background-color: #333;
+      color:#fff;
+    }
+    .box1{
+      box-sizing: content-box;
+    }
+    .box2{
+      box-sizing: border-box;
+      /* 기본 값이 box-sizing은 박스 모델 계산법을 지정 */
+      /* width/height 지정값이 
+      박스모델 content 영역지정
+      border+padding+content
+       */
+      /* width라고 선언된 값은 border+padding+content */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box box1">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum architecto sed, iusto, ullam perspiciatis totam nulla, quis consectetur eveniet quia hic iste amet obcaecati distinctio? Quidem magni nostrum possimus blanditiis?</div>
+        <div>Voluptate quas doloribus impedit fugiat rem, necessitatibus quam obcaecati similique quis. Ex repellat esse beatae, ea quidem veritatis officiis, accusamus, aperiam molestias accusantium quia optio quasi natus ipsam corrupti labore.</div>
+    </div>
+    <div class="box box2">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate rem iusto voluptatibus, sapiente obcaecati facilis quasi, quam sed vero repellat minima. Magnam, nihil inventore? Omnis nulla deserunt fugiat asperiores aut?</div>
+        <div>Molestiae repellendus, delectus officiis nostrum eveniet explicabo earum unde mollitia magnam assumenda, harum natus. Placeat ipsa, facilis iusto inventore enim minima ipsam quisquam quae, id quas quidem eos voluptatibus et.</div>
+    </div>
+  </div>
+</body>
+</html>

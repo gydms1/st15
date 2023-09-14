@@ -17,7 +17,7 @@
       background-color: #ccc;
       padding:10px 20px 30px 40px;
       /*padding 순서 상우하좌*/
-      margin:50px;
+      /* margin:50px; */
       /*margin 순서 상우하좌*/
     }
     .box:nth-of-type(2){
@@ -40,6 +40,24 @@
       margin: 상하 좌우;
       margin: 상우하좌;
     */
+    *{padding:0; margin:0;}
+    /*요소의 수평크기
+    lm+lb+lp+content(width)+rp+rb+rm
+    왼쪽 마진+왼쪽 볼더+왼쪽 패딩+콘텐츠(너비)+오른쪽 패딩+오른쪽 볼더+오른쪽 마진
+    
+    요소의 수직크기
+    탑 마진+탑볼더+탑패딩+콘텐츠(높이)+바텀 패팅+바텀 볼더+바텀 마진*/
+    h1{
+      background-color: #f68;
+    }
+    .box:nth-of-type(1){
+      margin: 50px;
+    }
+    .box:nth-of-type(2){
+      width:300px;
+      margin:100px auto;
+    }
+
   </style>
 </head>
 <!-- 태그에 인라인으로 css적용 -->
