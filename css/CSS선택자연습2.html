@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS선택자연습2</title>
+  <style>
+    body{font-size: 14px; color:#300; /*font-family: "나눔", "궁서체";*/}
+    /* font-weight 폰트 굵기 font-size 폰트 사이즈 color 색깔 */
+    .title{font-weight: bold; font-size: 24px; color: purple;}
+    .title a{color:#000; text-decoration: none; /*밑줄문자 안씀*/}
+    .title a:hover{color:purple; text-decoration: underline; background-color: rgba(0,0,255,0.5); padding: 0.5rem 1rem;}
+    .box{
+      color: #000; font-size: 0.929em; /*em은 부모의 글자 크기*/
+      margin:1rem; /*body의 글자크기*2*/
+      background-color: #ccc;
+      line-height: 1.4;
+    }
+    /* #section2 .box:last-child{font-family: "궁서체"; color: #00f;} */
+    #section2 .box:nth-child(3) {font-family: "궁서체"; color: #00f;}
+
+    #category .position .xans-record-:first-child a{color:#f00; font-weight: blod;}
+    #category .position .xans-record-:nth-child(3) a:hover{background-color: rgba(255,0,0,0.5);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+
+    </header>
+    <div class="main">
+      <!-- #section$.container*2>.inner>(.title>{제목})+.(desc>.box*2)>lorem6 -->
+      <div id="section1" class="container">
+        <div class="inner">
+          <div class="title"><a href="">제목</a></div>
+          <div class="desc">
+            <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptates soluta, nam mollitia explicabo distinctio illum, incidunt consequatur a tempore et eveniet quia, voluptatum fugit excepturi! Expedita repellat minima excepturi.
+            Eligendi, sed cumque cum neque eius iste in nobis sit consequatur incidunt inventore dolor, dicta deserunt pariatur tenetur assumenda officia ex a est velit aliquid possimus quidem. Dolorem, est quos? Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="box">Sed corporis rerum vel minima facere!</div>
+          </div>
+        </div>
+      </div>
+      <div id="section2" class="container">
+        <div class="inner">
+          <div class="title">제목</div>
+          <div class="desc">
+            <div class="box">
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rerum illo nostrum debitis dolore? Vero necessitatibus minus beatae sit corporis aut nemo consequuntur? Velit cum tempore dicta fugiat dolorem! Tempora.</div>
+              <div>Excepturi exercitationem modi hic omnis itaque! Facere modi ratione distinctio iure vero ad, commodi, quidem, voluptatem officiis consequatur maxime. Ipsa, voluptate praesentium eos aspernatur laboriosam provident distinctio omnis nobis non!</div>
+              <div>Inventore odio et suscipit in cupiditate sit ullam facilis ratione! Amet ipsam assumenda nisi. Quae cupiditate dicta similique, praesentium ipsam cum in ipsa veritatis laborum eaque asperiores sequi doloribus. Inventore.</div>
+              <div>Iure voluptates quia quibusdam impedit adipisci dicta nemo fuga, qui iusto minus? Beatae illum aliquam, dolore ab aperiam dolorem ratione molestiae in sunt ex ea sint. Consectetur sunt dicta aut?</div>
+              <div>Dolorem quaerat aut alias, quis repellat facilis cupiditate? Animi unde facere quod accusantium illum harum, laborum reiciendis asperiores deleniti dicta nostrum nisi tempora labore sint? Aliquid ipsam nulla totam cumque?</div>
+              <div>Vitae, adipisci rem? Explicabo nemo facilis, nostrum numquam repellat iste natus quod minus aliquam mollitia recusandae, ut vitae porro tempore minima esse deleniti quae eum itaque optio in quidem eveniet.</div>
+              <div>Tempore, reiciendis maxime dolorem eos consectetur iusto saepe reprehenderit eum nisi autem cum dicta numquam, perspiciatis molestias eaque. Itaque, accusantium. Aliquam maxime asperiores vel eius quasi accusamus in possimus quae.</div>
+              <div>Sequi perferendis doloremque sit, at beatae eum odit blanditiis praesentium, laudantium placeat rem error, et quod obcaecati excepturi iusto ex. Enim eum fugit quasi, consectetur numquam explicabo et quam labore!</div>
+            </div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae ipsa aut libero, minus mollitia qui voluptas fugit nihil quos natus et consequuntur! Obcaecati aperiam aut consequuntur laborum minus ullam!
+            Nulla est eius labore illum tempora dolor error quae deleniti eos iusto itaque vero illo velit, a repellendus laudantium possimus? Impedit voluptate ipsa magni quia architecto non assumenda consequuntur sit? Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="box">Omnis dolores vitae nisi corporis numquam!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>
+  </div>
+</body>
+</html>
