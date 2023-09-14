@@ -1,15 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+
 body{
-  font-family: "궁서체", "맑은고딕";
+
+  /* font-family: 'IBM Plex Sans KR', sans-serif; */
+
+  /*font-family: "궁서체", "맑은고딕";
   font-size: 14px;
   color: #333;
-  -webkit-text-size-adjust: none; /*ios의 텍스트 핸드폰 방향 전환 시 진하게 되는 현상 방지*/
-  line-height: 1.4;
+  -webkit-text-size-adjust: none; ios의 텍스트 핸드폰 방향 전환 시 진하게 되는 현상 방지
+  line-height: 1.4; */
+  /*글꼴 간단표기법*/
+  font: 14px/1.4 'Noto Sans KR', sans-serif;;
+  
+
 }
+
 a:link, a:visited{
   color:#333;
   text-decoration: none;
 }
+
 a:hover{
   color:#f00;
   text-decoration: underline;
+}
+
+/* 타이포 그래피 */
+.page-title{
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: 'IBM Plex Sans KR', sans-serif;
 }
