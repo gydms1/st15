@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 /* font-family  */
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+/* font-family: 'Dancing Script', cursive; */
 /* reset */
 *{margin:0; padding:0;}
 
@@ -23,7 +25,7 @@ body{
 header{
   /* width:auto; */
   min-height: 50px;
-  padding:2rem;
+  padding:2rem;/*부모에게 패딩*/
   background-color: #ccc;
 }
 
@@ -31,6 +33,28 @@ header{
 .page-title{
   width: 90%;
   max-width: 1400px;
+  /* margin:0 auto; *//*부모가 보더 패딩 텍스트가 없을경우 마진갑*/
   margin:0 auto;
   background-color: #f00;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color:#fff;
 }
+
+.container{
+
+}
+
+section{
+  background-color: #efefef;
+  margin-top: 50px;
+  /* min-height:100px; */
+  height:100px;
+  width:300px;
+  margin:50px auto;
+}
+
+#section1{overflow:auto;}
+#section2{overflow: hidden;}
+/* #section1{overflow:scroll;} */
+#section3{overflow:auto;}
