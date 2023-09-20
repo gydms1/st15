@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text관련</title>
+  <style>
+    *{margin:0; padding:0;}
+    .wrap{
+      margin:50px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+    }
+    .wrap p{
+      text-indent: 1em;
+      text-transform: uppercase;
+      letter-spacing: normal;
+    }
+    .wrap p:last-child{
+      text-indent: -32px;
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magni asperiores in corporis dolor veritatis ex, necessitatibus voluptatibus quod consectetur officia repellat ratione, quisquam, iure nihil debitis itaque beatae quaerat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit possimus sapiente assumenda tenetur dolorem provident sed eos qui sunt? Maiores nesciunt quasi quis, praesentium inventore iure neque ea quaerat voluptatem.</p>
+  </div>
+  <div class="shadow sect1">
+    <p class="section-title">section-title</p>
+  </div>
+  <div class="shadow sect2">
+    <p class="section-title">section-title</p>
+  </div>
+  <style>
+    .section-title{
+      font-size: 2.5em;
+      text-transform: capitalize;
+      padding: 1em;
+
+      /* text-shadow: 10px 10px 10px rgba(255, 0, 0, 0.5); */
+      /* text-shadow: -10px -10px 0px rgba(255, 0, 0, 0.5); */
+      text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+    }
+    
+    /* oterglow */
+    .sect2{
+      background-color: #333;
+    }
+    .sect2 .section-title{
+      color:#fff;
+      font-weight: 700;
+
+      text-shadow: 0px 0px 10px rgba(255, 255, 0, 1);
+    }
+  </style>
+</body>
+</html>

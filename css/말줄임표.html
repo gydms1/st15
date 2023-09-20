@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말줄임표</title>
+</head>
+<style>
+  .sample{
+    width:400px;
+    margin:100px auto;
+    box-sizing: border-box;
+    border: 1px solid #000;
+  }
+
+  .box{padding: 30px; background-color: #ccc;}
+  .box p{
+    /* 말줄임 관련 */
+    /* white-space: normal; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* height: 150px; */
+    background-color: #f68;
+    margin-bottom: 50px;
+  }
+  .sample:nth-of-type(2) .box p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+
+</style>
+<body>
+  <div class="sample">
+    <div class="box">
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi eligendi non vero cupiditate doloremque atque, obcaecati laboriosam sunt consequuntur quasi reprehenderit magni ad voluptates assumenda, eum mollitia nobis minima?</span><span>Quas consequatur saepe et repudiandae in dolores, illo deserunt aperiam pariatur temporibus dolorem quod, eveniet odio ad provident ipsam eaque inventore, ipsa accusantium neque eligendi tempore error magni totam. Tenetur.</span></p>
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt cumque asperiores rem ipsum, perspiciatis non! Tempore praesentium voluptas mollitia aspernatur ratione ad quae voluptates, est enim, quod nihil saepe.</span><span>Temporibus, suscipit officia? Quae rem, sapiente soluta alias autem minus praesentium, ducimus sunt adipisci nihil magnam, assumenda est inventore harum sequi architecto aspernatur corporis ab ipsa! Quis at odio molestiae?</span></p>
+    </div>
+  </div>
+  <div class="sample">
+    <div class="box">
+      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint minus distinctio perferendis, culpa delectus repellat, doloribus velit, in illum reiciendis incidunt vero architecto necessitatibus. Enim aspernatur unde iste reiciendis laborum.</span><span>Sint porro aliquid rerum sunt ullam quia. Magni placeat quidem iusto non sint. Dolorem delectus blanditiis eos quo illum, a animi odio aut expedita excepturi? Necessitatibus exercitationem vero unde consequuntur.</span></p>
+      <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci illo porro sequi provident reprehenderit iure molestias quasi! Veniam explicabo dolor numquam deleniti excepturi hic dolores minus ipsa labore iusto.</span><span>Veritatis pariatur eveniet cupiditate accusamus modi, officia voluptate, iusto magnam, natus tenetur voluptatibus nobis eaque in quia dolorem. Soluta consequatur quibusdam aspernatur. Harum incidunt reprehenderit iure, veniam laudantium alias recusandae.</span></p>
+    </div>
+  </div>
+  <div class="sample2">
+    <div class="cotent-wrap">
+      <p>대통령은 필요하다고 인정할 때에는 외교·국방·통일 기타 국가안위에 관한 중요정책을 국민투표에 붙일 수 있다. 근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다. 헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta debitis quam quod asperiores quae numquam laudantium itaque. Dolores earum alias quaerat!</p>
+    </div>
+  </div>
+  <style>
+    .sample2{
+      width: 80%;
+      margin: auto;
+    }
+
+    .sample2 p{
+      text-align: center;
+      word-break: keep-all;/*한글의 단어단위 줄바꿈*/
+    }
+  </style>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블 관련</title>
+  <style>
+    *P{margin: 0; padding: 0;}
+    .container{
+      margin:50px;
+    }
+    table, tr, td, th{
+      box-sizing: border-box;
+    }
+    table.sample{
+      border-collapse: collapse;
+      table-layout: fixed;/*테이블과 셀에 너비를 지정할 때*/
+      box-sizing: border-box;
+      width:100%;
+      border: 1px solid #000;
+      border-top: 10px solid #f86;
+  
+    }
+    .sample tr:nth-child(1) th{
+      background-color: #000;
+      color: #fff;
+      padding:1rem;
+    }
+    .sample tr:nth-child(even) td{
+      background-color: #efefef;
+    }
+    .sample tr:nth-child(odd) td{
+      background-color: #fff;
+    }
+    .sample tr:hover td{
+      background-color: #68f;
+    }
+    .sample th,.sample td{
+      padding:1em;
+      border: 1px solid #000;
+      box-sizing: border-box;/*계산이 편해집니다*/
+    }
+    .sample th:nth-child(1){
+      width:13rem;
+    }
+    .sample tr:nth-child td(1){vertical-align:middle;}
+    .sample tr:nth-child td(2){vertical-align:top;}
+    .sample tr:nth-child td(3){vertical-align:middle;}
+    .sample tr:nth-child td(4){vertical-align:bottom;}
+    .sample th:nth-child(3){
+      width:150px;
+    }
+  </style>
+</head>
+<body>
+ <div class="container">
+  <table class="sample">
+    <tr>
+      <th>title1</th>
+      <th>title2</th>
+      <th>title3</th>
+    </tr>
+
+    <tr>
+      <td>Lorem, ipsum.</td>
+      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio tenetur deleniti nemo perspiciatis quos sequi. Tempore quidem, exercitationem animi ducimus alias debitis amet eius ut minus, tenetur dicta facilis.
+      Soluta repellendus laboriosam ratione ullam voluptatum enim delectus sed temporibus ipsum unde sequi, a laborum vel ut tenetur est odio omnis porro repudiandae. Facere aliquam dolore nulla qui ipsum rem.</td>
+      <td>Suscipit, minima.</td>
+    </tr>
+
+    <tr>
+      <td>Lorem, ipsum.</td>
+      <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet assumenda quaerat asperiores? Sequi aperiam deleniti ducimus ipsum perspiciatis ratione officia nostrum, ad atque voluptate, unde quam, quidem quasi minus enim!
+      Illo pariatur illum beatae libero labore tempore debitis minus, ipsam, laudantium dolorem, nihil repellendus facilis. Obcaecati similique laudantium consequatur atque explicabo, provident ab culpa quisquam asperiores maxime error! Minus, odio.</td>
+      <td>Laborum, dolores!</td>
+    </tr>
+
+    <tr>
+      <td>Lorem, ipsum.</td>
+      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate libero ducimus nesciunt corrupti nemo? Beatae natus animi quod perspiciatis fuga, est eius autem, in commodi eum optio nesciunt harum sint?
+      Quis deleniti magnam nesciunt consequuntur exercitationem, molestiae recusandae, facilis inventore quasi mollitia nam facere possimus sunt? Rerum, totam quas cum aliquid optio quos minima. Dolor esse facere quas quos sequi!</td>
+      <td>In, veritatis.</td>
+    </tr>
+
+  </table>
+ </div>
+</body>
+</html>
