@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position3</title>
+  <link rel="stylesheet" href="asset/css/cafe24reset.css">
+  <style>
+    .wrap{max-width: 1240px; margin:50px auto 0;}
+    .ec-base-product{}
+    .ec-base-product .prdList{
+      overflow: hidden;
+      background-color: #ccc;
+      
+    }
+    .ec-base-product::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .ec-base-product .grid1 > li{
+      width:25%;
+    }
+    .ec-base-product .grid2 > li{
+      width:25%;
+    }
+    .ec-base-product .grid3 > li{
+      width:25%;
+    }
+    .ec-base-product .grid4 > li{
+      width:25%;
+    }
+    .ec-base-product .grid5 > li{
+      width:25%;
+    }
+    .ec-base-product .prdList >li{
+      /* display: inline-block; */
+      /*float가 선언되면 일반흐름에서 제외*/
+      float: left;
+      background-color: #f68;
+      box-sizing: border-box;
+      /* 배경색이 적용되는 양쪽 여백 10px */
+      padding: 0 10px;
+    }
+    .ec-base-product .prdList .thumbnail{
+      /* .ec-base-product .prdList >li .icon__box의 기준 조상 */
+      position: relative;
+    }
+    .ec-base-product .prdList >li .icon__box{
+      position: absolute;
+      right: 0; top: 0;
+    }
+     .ec-base-product .prdList >li .icon__box >span{
+      display: block;
+     }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="ec-base-product">
+      <div class="mainTilte"></div>
+      <ul class="prdList grid4">
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span><img src="asset/img/icon_202107202127542500.png" alt="wish"></span>
+                <span><img src="asset/img/icon_202107191654165100.png" alt="cart"></span>
+              </div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description"></div>
+          </li>
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span><img src="asset/img/icon_202107202127542500.png" alt="wish"></span>
+                <span><img src="asset/img/icon_202107191654165100.png" alt="cart"></span>
+              </div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description"></div>
+          </li>
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span><img src="asset/img/icon_202107202127542500.png" alt="wish"></span>
+                <span><img src="asset/img/icon_202107191654165100.png" alt="cart"></span>
+              </div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description"></div>
+          </li>
+          <li class="xans-record-">
+            <div class="thumbnail">
+              <a href=""><img src="asset/img/f46d04dc642d3b8507058c347ccf4fb0.jpg" alt=""></a>
+              <div class="icon__box">
+                <span><img src="asset/img/icon_202107202127542500.png" alt="wish"></span>
+                <span><img src="asset/img/icon_202107191654165100.png" alt="cart"></span>
+              </div>
+              <span class="benefit"></span>
+            </div>
+            <div class="description"></div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
