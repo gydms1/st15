@@ -59,7 +59,7 @@
     .ec-base-product .prdList .description{
       position: absolute;
       left: 0px; bottom: 0px;
-      background-color: rgba(255,255,255,0.5);
+      background-color: rgba(255,102,136,0.5);
       /* 일반흐름에서 제외되었지만 기준조상으로 부터 width를 가져 올 수 있다 */
       width:100%;
       padding:1em;
@@ -69,7 +69,19 @@
     /* transform 설정 시작 */
     .ec-base-product .prdList .description{
       /* 본인 요소의 크기만큼 y축으로 이동 */
-      
+      transform: translate(0,100%);
+      background-color: rgba(255,255,255,0.9);
+      transition: all 0.1s;
+    }
+
+    /* transition */
+    /* li에 마우스를 오버하면
+    .description의 원위치 자신의 높이만큼 위로 올린 위치 변경 */
+    
+
+    .ec-base-product .prdList >li:hover .description{
+      transform: translate(0,0);
+      transition: all 0.3s;
     }
   </style>
 </head>
