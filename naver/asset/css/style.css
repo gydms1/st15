@@ -104,6 +104,7 @@ em {
   margin: -1px;
   overflow: hidden;
 }
+
 body,
 html {
   height: 100%;
@@ -144,15 +145,23 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-.header_wrap .header_logo,
+/* .header_wrap .header_logo,
 .header_wrap nav,
 .header_wrap .header_util{
-  flex-direction: none;
+  flex: none;
+} */
+
+
+.header_wrap .header_logo a{
+  display: block;
+  width: 90px; height: 20px;
+  background:url(../image/header_logo.png) no-repeat 50% 50%;
 }
 
 
-/* container */
+
+/* .container */
 .container{
-  padding: 80px 0 160px;
+  padding:80px 0 160px;
   background-color: #ccc;/*테스트용*/
 }
