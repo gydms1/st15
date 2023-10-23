@@ -1,0 +1,6 @@
+/* #header.fixed 수정 */
+#header.fixed{background-color: rgba(255, 255, 255, 0.5);}
+#header.fixed .inner .navigation{background-color: transparent;}
+#header.fixed .inner .xans-layout-logotop {display: none;}
+#header.fixed .inner .topArea__statelogon {display: none;}
+/* #header.fixed 수정 끝 */
