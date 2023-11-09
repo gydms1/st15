@@ -1,0 +1,10 @@
+#contents > .section.product_top_image{
+  min-width: none !important;
+  width: 100%;
+}
+#contents > .section.product_top_image img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

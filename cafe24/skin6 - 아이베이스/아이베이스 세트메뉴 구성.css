@@ -1,11 +1,31 @@
-/* 세트메뉴 2단
-   세트1 분류의 1번상품 크게
-   세트1 분류 2,3번 상품 작게
+/* 아이베이스 세트메뉴 시작 */
+.my-set .xans-product-listmain li.xans-record- .prdList__item{
+  position: relative;
+  overflow: hidden;
+}
+.my-set .xans-product-listmain li.xans-record- .prdList__item .description{
+  position: absolute;
+  left: 0; bottom:0;
+  width: 100%;
+  padding: 1em 0.5em;
+  box-sizing: border-box;
+  background-color:rgba(255,255,255,0.7);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.my-set .xans-product-listmain li.xans-record- .prdList__item .description .spac{
+  margin-top: 5px;
+}
+.my-set .xans-product-listmain li.xans-record- .prdList__item .description .spac > li{
+  margin-bottom: 0px;
+}
+.my-set .xans-product-listmain li.xans-record-:hover .prdList__item .description{
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s;
+}
 
-   세트1분류
-   세트2분류
-   수평
-*/
 
 .my-container.my-set{
   --my-main_product_list-gap:20px;
@@ -20,13 +40,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-.my-container.my-set .main_product_list{
+.my-container.my-set .xans-product-listmain{
   flex: none;
   width:calc(50% - var(--my-main_product_list-gap));
   box-sizing: border-box;
 }
-.my-container.my-set .main_product_list .xans-product-listmain{}
-.my-container.my-set .main_product_list .xans-product-listmain .prdList{
+.my-container.my-set .xans-product-listmain{}
+.my-container.my-set .xans-product-listmain .prdList{
   position: relative;
   display: flex;
   flex-direction: row;
@@ -36,19 +56,19 @@
   box-sizing: border-box;
 }
 
-.my-container.my-set .main_product_list .xans-product-listmain .prdList > li{
+.my-container.my-set .xans-product-listmain .prdList > li{
   flex: none;
   box-sizing: border-box;
 }
-.my-container.my-set .main_product_list .xans-product-listmain .prdList > li:nth-child(1){
+.my-container.my-set .xans-product-listmain .prdList > li:nth-child(1){
   width: calc(60% - var(--my-prdList-gap));
 }
-.my-container.my-set .main_product_list .xans-product-listmain .prdList > li:nth-child(2),
-.my-container.my-set .main_product_list .xans-product-listmain .prdList > li:nth-child(3){
+.my-container.my-set .xans-product-listmain .prdList > li:nth-child(2),
+.my-container.my-set .xans-product-listmain .prdList > li:nth-child(3){
   width: calc(40% - var(--my-prdList-gap));
 }
-.my-container.my-set .main_product_list .xans-product-listmain .prdList > li:nth-child(2){}
-.my-container.my-set .main_product_list .xans-product-listmain .prdList > li:nth-child(3){
+.my-container.my-set .xans-product-listmain .prdList > li:nth-child(2){}
+.my-container.my-set .xans-product-listmain .prdList > li:nth-child(3){
   position: absolute; right: 0; bottom: 0;
 }
 
@@ -113,3 +133,4 @@
     width: 100%;
   }
 }
+/* 아이베이스 세트메뉴 종료 */
