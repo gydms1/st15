@@ -1,0 +1,10 @@
+.action_button [class^='btnSubmit'],
+.action_button  a[class^='btnSubmit']{
+  background-color: #6cf;
+  color: #01f;
+}
+.action_button [class^='btnSubmit']:hover,
+.action_button  a[class^='btnSubmit']:hover{
+  background-color: #01f;
+  color: #6cf;
+}
